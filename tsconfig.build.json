@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", // 编译好的文件输出到哪里
+    "module": "esnext", // 输出的module类型。
+    "target": "es5", // 编译以后符合什么样的es标准，制定编译的es编译的目标版本
+    "declaration": true, // 开启类型定义。生成.d.ts，获得提示和类型检查
+    "jsx": "react", // 编译出来的文件可以使用react-create-element代替jsx语法
+    "moduleResolution": "node", // 指定模块解析策略。 如果未指定，则 --module commonjs 默认为 Node，否则默认为 Classic（包括 --module 设置为 amd、system、umd、es2015、esnext 等时）
+    "allowSyntheticDefaultImports": true // 支持default import的方式
+  },
+  "include": [
+    "src"
+  ], // 编译哪些文件
+  "exclude": [
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx",
+  ], // 不需要编译的文件
+
+}
